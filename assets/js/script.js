@@ -1,19 +1,22 @@
-console.log("Website Loaded Successfully");
+// Hamburger Menu
+const ham = document.getElementById('hamburgerBtn');
+const nav = document.querySelector('nav');
+ham.addEventListener('click', () => { nav.classList.toggle('active'); });
 
-function openLightbox(url, caption) {
-  document.getElementById("lightboxModal").style.display = "block";
-  document.getElementById("lightboxImage").src = url;
-  document.getElementById("lightboxCaption").innerText = caption;
-}
+// Lightbox
+const lightboxLinks = document.querySelectorAll('.lightbox');
+const popup = document.getElementById('lightboxPopup');
+const popupImg = document.getElementById('lightboxImg');
+const closeBtn = document.getElementById('closeLightbox');
 
-document.addEventListener("DOMContentLoaded", () => {
-  document.querySelector(".close").onclick = () => {
-    document.getElementById("lightboxModal").style.display = "none";
-  };
+lightboxLinks.forEach(link => {
+  link.addEventListener('click', (e) => {
+    e.preventDefault();
+    popup.style.display = 'flex';
+    popupImg.src = link.href;
+  });
+});
 
-  document.getElementById("lightboxModal").onclick = (e) => {
-    if (e.target === e.currentTarget) {
-      e.currentTarget.style.display = "none";
-    }
-  };
+closeBtn.addEventListener('click', () => {
+  popup.style.display = 'none';
 });

@@ -1,207 +1,42 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Construction Gallery</title>
-  <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
-
-<!-- <header>
-  <h1>Construction Gallery</h1>
-</header> -->
-
-<nav>
-  <a href="index.html">Home</a>
-  <a href="about.html">About Us</a>
-  <a href="gallery.html">Gallery</a>
-  <a href="contact.html">Contact</a>
-</nav>
-
-<section id="gallery">
-  <h2>Our Work</h2>
-
-  <div class="gallery">
-
-    <div class="gallery-item" onclick="openLightbox('https://images.unsplash.com/photo-1568605114967-8130f3a36994', 'Floor Tile Installation')">
-      <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994">
-      <p>Floor Tile Installation</p>
-    </div>
-
-    <div class="gallery-item" onclick="openLightbox('https://images.unsplash.com/photo-1570129477492-45c003edd2be', 'Brick Wall Setup')">
-      <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be">
-      <p>Brick Wall Setup</p>
-    </div>
-
-    <div class="gallery-item" onclick="openLightbox('https://images.unsplash.com/photo-1503387762-592deb58ef4e', 'Window Frame Installation')">
-      <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e">
-      <p>Window Frame Installation</p>
-    </div>
-
-    
-  </div>
-
-  <div class="gallery">
-
-    <div class="gallery-item" onclick="openLightbox('https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc', 'Floor Tile Installation')">
-      <img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc">
-      <p>Floor Tile Installation</p>
-    </div>
-
-    <div class="gallery-item" onclick="openLightbox('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format', 'Brick Wall Setup')">
-      <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format">
-      <p>Brick Wall Setup</p>
-    </div>
-
-    <div class="gallery-item" onclick="openLightbox('https://images.unsplash.com/photo-1503387762-592deb58ef4e', 'Window Frame Installation')">
-      <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e">
-      <p>Window Frame Installation</p>
-    </div>
-
-    
-  </div>
-
-</section>
-
-
-<section class="page fade-in">
-        <h2>Gallery</h2>
-        <div class="gallery" onclick="openLightbox('assets/images/img1.jpg', 'Floor Tile Installation')">
-           
-            <figure>
-                <img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc"
-                    data-caption="Window Frame Construction" class="lightbox-item" />
-                <figcaption>Windows Structure</figcaption>
-            </figure>
-            <figure>
-                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format"
-                    data-caption="Plumbing Installation" class="lightbox-item" />
-                <figcaption>Plumbing Work</figcaption>
-            </figure>
-            <figure>
-                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format"
-                    data-caption="Electrical Wiring Setup" class="lightbox-item" />
-                <figcaption>Electrical Wiring</figcaption>
-            </figure>
-        </div>
-    </section>
-
-<!-- Lightbox -->
-<div id="lightboxModal" class="lightbox-modal">
-  <span class="close">&times;</span>
-  <img id="lightboxImage" class="lightbox-content" />
-  <div id="lightboxCaption" class="caption"></div>
-</div>
-
-<script src="assets/js/script.js"></script>
-
-</body>
-</html>
-
-
-
-<!-- <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gallery</title>
-    <link rel="stylesheet" href="assets/css/style.css" />
-</head>
-
-<body>
-    <header>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a class="active" href="gallery.html">Gallery</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
-
-
-    <section class="page fade-in">
-        <h2>Gallery</h2>
-        <div class="gallery">
-            <figure>
-                <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994"
-                    data-caption="Tile Installation Work" class="lightbox-item" />
-                <figcaption>Tile Installation</figcaption>
-            </figure>
-            <figure>
-                <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be"
-                    data-caption="Brick Masonry Work" class="lightbox-item" />
-                <figcaption>Brick Masonry</figcaption>
-            </figure>
-            <figure>
-                <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e"
-                    data-caption="Cement Mixing On Site" class="lightbox-item" />
-                <figcaption>Cement Work</figcaption>
-            </figure>
-            <figure>
-                <img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc"
-                    data-caption="Window Frame Construction" class="lightbox-item" />
-                <figcaption>Windows Structure</figcaption>
-            </figure>
-            <figure>
-                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format"
-                    data-caption="Plumbing Installation" class="lightbox-item" />
-                <figcaption>Plumbing Work</figcaption>
-            </figure>
-            <figure>
-                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format"
-                    data-caption="Electrical Wiring Setup" class="lightbox-item" />
-                <figcaption>Electrical Wiring</figcaption>
-            </figure>
-        </div>
-    </section>
-
-
-    <footer>
-        <p>© 2025 Your Website Name. All Rights Reserved.</p>
-    </footer>
-</body>
-
-</html>
-
-
-<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Gallery</title>
-<link rel="stylesheet" href="assets/css/style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
-<header>
-<nav>
-<a href="index.html">Home</a>
-<a href="about.html">About Us</a>
-<a class="active" href="gallery.html">Gallery</a>
-<a href="contact.html">Contact</a>
-</nav>
-</header>
+  <nav>
+    <div class="logo">RealEstateCo</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburgerBtn">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
 
+  <section class="gallery-grid">
+    <a href="https://images.unsplash.com/photo-1568605114967-8130f3a36994" class="lightbox"><img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994" alt="Construction Image 1" /></a>
+    <a href="https://images.unsplash.com/photo-1570129477492-45c003edd2be"" class="lightbox"><img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be"" alt="Construction Image 2" /></a>
+    <a href="https://images.unsplash.com/photo-1503387762-592deb58ef4e" class="lightbox"><img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e" alt="Construction Image 3" /></a>
+  </section>
 
-<section class="page fade-in">
-<h2>Gallery</h2>
-<div class="gallery">
-<img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994" />
-<img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be" />
-<img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e" />
-<img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc" />
-<img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" />
-<img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" />
-</div>
-<div class="gallery">
+  <section class="gallery-grid">
+    <a href="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc" class="lightbox"><img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994" alt="Construction Image 1" /></a>
+    <a href="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format" class="lightbox"><img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format" alt="Construction Image 2" /></a>
+    <a href="https://images.unsplash.com/photo-1503387762-592deb58ef4e" class="lightbox"><img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e" alt="Construction Image 3" /></a>
+  </section>
 
-</div>
-</section>
+  <div id="lightboxPopup" class="lightbox-popup">
+    <span id="closeLightbox">×</span>
+    <img id="lightboxImg" />
+  </div>
 
-
-<footer>
-<p>© 2025 Your Website Name. All Rights Reserved.</p>
-</footer>
+  <script src="assets/js/script.js"></script>
 </body>
-</html> --> -->
+</html>
