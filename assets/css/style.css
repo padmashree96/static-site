@@ -105,15 +105,3 @@ section {
 .theme-toggle:hover {
   transform: scale(1.1);
 }
-
-/* Icon Visibility */
-.theme-toggle .sun { display: none; }
-.theme-toggle .moon { display: none; }
-
-[data-theme="light"] .sun {
-  display: block;
-}
-
-[data-theme="dark"] .moon {
-  display: block;
-}

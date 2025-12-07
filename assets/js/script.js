@@ -43,19 +43,4 @@ themeSelect.addEventListener("change", () => {
   localStorage.setItem("theme", theme);
 });
 
-// THEME ICON TOGGLE BUTTON
-const themeToggle = document.getElementById("themeToggle");
 
-// When button clicked → toggle between light & dark
-themeToggle.addEventListener("click", () => {
-  const current = document.documentElement.getAttribute("data-theme") || "light";
-  const nextTheme = current === "light" ? "dark" : "light";
-
-  document.documentElement.setAttribute("data-theme", nextTheme);
-  localStorage.setItem("theme", nextTheme);
-});
-
-// Load correct icon according to saved theme on page load
-if (savedTheme === "dark") {
-  document.documentElement.setAttribute("data-theme", "dark");
-}
