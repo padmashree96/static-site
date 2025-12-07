@@ -1,45 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gallery</title>
-  <link rel="stylesheet" href="assets/css/style.css" />
-</head>
-<body>
-  <nav>
-    <div class="logo">RealEstateCo</div>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="gallery.html">Gallery</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-    <button class="hamburger" id="hamburgerBtn">
-      <span></span><span></span><span></span>
-    </button>
-  </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">RealEstateCo</div>
+      <div class="theme-switcher">
+        <select id="themeSelect">
+          <option value="orange">Orange</option>
+          <option value="light">Light</option>
+          <option value="dark">Dark</option>
+          <option value="blue">Blue</option>
+          <option value="green">Green</option>
+        </select>
+      </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburgerBtn">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
 
-  <section class="gallery-grid">
-    <a href="https://images.unsplash.com/photo-1568605114967-8130f3a36994" class="lightbox"><img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994" alt="Construction Image 1" /></a>
-    <a href="https://images.unsplash.com/photo-1570129477492-45c003edd2be"" class="lightbox"><img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be"" alt="Construction Image 2" /></a>
-    <a href="https://images.unsplash.com/photo-1503387762-592deb58ef4e" class="lightbox"><img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e" alt="Construction Image 3" /></a>
-  </section>
+    <section class="gallery-grid">
+      <a
+        href="https://images.unsplash.com/photo-1568605114967-8130f3a36994"
+        class="lightbox"
+        ><img
+          src="https://images.unsplash.com/photo-1568605114967-8130f3a36994"
+          alt="Construction Image 1"
+      /></a>
+      <a
+        href="https://images.unsplash.com/photo-1570129477492-45c003edd2be"
+        class="lightbox"
+        ><img
+        src="https://images.unsplash.com/photo-1570129477492-45c003edd2be""
+        alt="Construction Image 2" /></a
+      >
+      <a
+        href="https://images.unsplash.com/photo-1503387762-592deb58ef4e"
+        class="lightbox"
+        ><img
+          src="https://images.unsplash.com/photo-1503387762-592deb58ef4e"
+          alt="Construction Image 3"
+      /></a>
+    </section>
 
-  <section class="gallery-grid">
-    <a href="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc" class="lightbox"><img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994" alt="Construction Image 1" /></a>
-    <a href="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format" class="lightbox"><img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format" alt="Construction Image 2" /></a>
-    <a href="https://images.unsplash.com/photo-1503387762-592deb58ef4e" class="lightbox"><img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e" alt="Construction Image 3" /></a>
-  </section>
+    <section class="gallery-grid">
+      <a
+        href="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc"
+        class="lightbox"
+        ><img
+          src="https://images.unsplash.com/photo-1568605114967-8130f3a36994"
+          alt="Construction Image 1"
+      /></a>
+      <a
+        href="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format"
+        class="lightbox"
+        ><img
+          src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format"
+          alt="Construction Image 2"
+      /></a>
+      <a
+        href="https://images.unsplash.com/photo-1503387762-592deb58ef4e"
+        class="lightbox"
+        ><img
+          src="https://images.unsplash.com/photo-1503387762-592deb58ef4e"
+          alt="Construction Image 3"
+      /></a>
+    </section>
 
-  <div id="lightboxPopup" class="lightbox-popup">
-    <span id="closeLightbox">×</span>
-    <img id="lightboxImg" />
-  </div>
+    <div id="lightboxPopup" class="lightbox-popup">
+      <span id="closeLightbox">×</span>
+      <img id="lightboxImg" />
+    </div>
 
-  <footer style="text-align:center; padding:20px; background:#f3f3f3; margin-top:40px;">
-    © 2025 RealEstateCo — All rights reserved.
-  </footer>
-  <script src="assets/js/script.js"></script>
-</body>
+    <footer
+      style="
+        text-align: center;
+        padding: 20px;
+        background: #f3f3f3;
+        margin-top: 40px;
+      "
+    >
+      © 2025 RealEstateCo — All rights reserved.
+    </footer>
+    <script src="assets/js/script.js"></script>
+  </body>
 </html>

@@ -1,3 +1,4 @@
+localStorage.setItem("theme", "orange")
 // Hamburger Menu
 const ham = document.getElementById('hamburgerBtn');
 const nav = document.querySelector('nav');
@@ -24,9 +25,6 @@ closeBtn?.addEventListener('click', () => {
 
 // THEME SWITCHER
 const themeSelect = document.getElementById("themeSelect");
-
-  console.log("themeSelect ", themeSelect);
-
 // Load Saved Theme
 const savedTheme = localStorage.getItem("theme");
 console.log(savedTheme)
