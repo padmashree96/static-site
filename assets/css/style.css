@@ -1,4 +1,56 @@
-body { margin:0; font-family:Arial, sans-serif; }
+/* Default Light Theme */
+:root {
+  --bg: #ffffff;
+  --text: #222222;
+  --accent: #1a73e8;
+}
+
+/* Dark Theme */
+[data-theme="dark"] {
+  --bg: #111111;
+  --text: #e6e6e6;
+  --accent: #bb86fc;
+}
+
+/* Blue Theme */
+[data-theme="blue"] {
+  --bg: #e8f1ff;
+  --text: #002e6d;
+  --accent: #1a73e8;
+}
+
+/* Green Theme */
+[data-theme="green"] {
+  --bg: #e9f7ec;
+  --text: #0a421a;
+  --accent: #1db954;
+}
+
+/* Orange Theme */
+[data-theme="orange"] {
+  --bg: #fff4e6;
+  --text: #7a3e00;
+  --accent: #ff8c00;
+}
+
+
+body {
+  margin:0;
+  font-family:Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  transition: 0.3s ease;
+}
+
+a, .logo, nav ul li a:hover {
+  color: var(--accent);
+}
+
+button, .cta {
+  background: var(--accent);
+  color: #fff;
+}
+
 nav { display:flex; justify-content:space-between; align-items:center; padding:15px; background:#eee; }
 nav ul { display:flex; gap:20px; list-style:none; }
 nav a { text-decoration:none; color:#333; font-weight:600; }
@@ -20,4 +72,48 @@ section {
   .hamburger { display:flex; flex-direction:column; gap:4px; background:none; border:none; }
   .hamburger span { width:25px; height:3px; background:#333; }
   .gallery-grid { grid-template-columns:1fr 1fr; }
+}
+
+
+
+
+* {
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/* Floating Theme Button */
+.theme-toggle {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background: var(--accent);
+  border: none;
+  outline: none;
+  padding: 12px 14px;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.25);
+  z-index: 9999;
+  transition: transform 0.3s ease;
+}
+
+.theme-toggle:hover {
+  transform: scale(1.1);
+}
+
+/* Icon Visibility */
+.theme-toggle .sun { display: none; }
+.theme-toggle .moon { display: none; }
+
+[data-theme="light"] .sun {
+  display: block;
+}
+
+[data-theme="dark"] .moon {
+  display: block;
 }
